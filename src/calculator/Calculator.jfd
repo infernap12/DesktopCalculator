@@ -1,0 +1,218 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "17.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "MainForm"
+			"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "File"
+					"text": "File"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "exit"
+						"text": "Exit"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exit", true ) )
+					} )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "0:1.0"
+				"$rowSpecs": "0:1.0, 0:1.0"
+			} ) {
+				name: "centrePanel"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"rows": 2
+				} ) {
+					name: "displayPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ResultLabel"
+						"font": new java.awt.Font( "Segoe UI", 1, 48 )
+						"horizontalAlignment": 11
+						"text": "0"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "EquationLabel"
+						"horizontalAlignment": 11
+						"font": new java.awt.Font( "Tahoma", 0, 16 )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"weighty": 1.0
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 4
+					"rows": 6
+				} ) {
+					name: "buttonPanel"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Parentheses"
+						"text": "( )"
+						"preferredSize": &Dimension0 new java.awt.Dimension( 45, 45 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "parenthetical", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "ClearEntry"
+						"text": "CE"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Clear", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Clear"
+						"text": "C"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Clear", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Delete"
+						"text": "Del"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Delete", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "PowerTwo"
+						"text": "x²"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "PowerTwo", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "PowerY"
+						"text": "xʸ"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "PowerY", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "SquareRoot"
+						"text": "√"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SquareRoot", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Divide"
+						"text": "÷"
+						"preferredSize": new java.awt.Dimension( 45, 45 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "opConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Seven"
+						"text": "7"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "faceTextEquationConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Eight"
+						"text": "8"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "faceTextEquationConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Nine"
+						"text": "9"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "faceTextEquationConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Multiply"
+						"text": "×"
+						"preferredSize": new java.awt.Dimension( 45, 45 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "opConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Four"
+						"text": "4"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "faceTextEquationConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Five"
+						"text": "5"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "faceTextEquationConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Six"
+						"text": "6"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "faceTextEquationConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Subtract"
+						"text": "-"
+						"preferredSize": new java.awt.Dimension( 45, 45 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "opConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "One"
+						"text": "1"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "faceTextEquationConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Two"
+						"text": "2"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "faceTextEquationConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Three"
+						"text": "3"
+						"preferredSize": #Dimension0
+						"selectedIcon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "faceTextEquationConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Add"
+						"text": "+"
+						"preferredSize": new java.awt.Dimension( 45, 45 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "opConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "PlusMinus"
+						"text": "±"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "negate", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Zero"
+						"text": "0"
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "faceTextEquationConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Dot"
+						"text": "."
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "faceTextEquationConcat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Equals"
+						"text": "="
+						"preferredSize": #Dimension0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Equals", true ) )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 1
+					"weighty": 2.0
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+				name: "hSpacer2"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "East"
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+				name: "hSpacer3"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "West"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 35 )
+			"size": new java.awt.Dimension( 310, 475 )
+		} )
+	}
+}
